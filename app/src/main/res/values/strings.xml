@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">jklotz-FuelTrack</string>
+    <string name="action_settings">Settings</string>
+    <string name="AppTitle">Fuel Consumption Tracker</string>
+    <string name="btnViewEdit">View/Edit Entries</string>
+    <string name="btnAdd">Add Entry</string>
+    <string name="title_activity_add">addActivity</string>
+</resources>

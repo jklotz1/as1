@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_e2f9d11915b84cd657b7bb145fc3dab2b2639493.jar" />
+    </item>
+    <item
+        jar="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_debf1764345703806ff8444eb335f52124dd4469.jar" />
+    </item>
+    <item
+        jar="/Users/Jessica/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_0190b51ba4824245a52e926589587f27dca539dc.jar" />
+    </item>
+    <item
+        jar="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_854d7643bd91d024bf5ece5dd5c2b89c28166221.jar" />
+    </item>
+    <item
+        jar="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_b4a6273a95b18108c4c1b446895ff1ccaaf4e416.jar" />
+    </item>
+    <item
+        jar="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/Jessica/Documents/School/CMPUT301/Assignments/as1/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_b79ad7340af9623755237af002427d37a201aa62.jar" />
+    </item>
+
+</items>
