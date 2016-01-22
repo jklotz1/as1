@@ -23,4 +23,9 @@ public class addActivity extends AppCompatActivity {
 
     }
 
+    public void cancelEntry(View view){
+        onBackPressed();
+
+    }
+
 }

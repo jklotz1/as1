@@ -4,5 +4,13 @@
     <string name="AppTitle">Fuel Consumption Tracker</string>
     <string name="btnViewEdit">View/Edit Entries</string>
     <string name="btnAdd">Add Entry</string>
-    <string name="title_activity_add">addActivity</string>
+    <string name="title_activity_add">Add New Entry</string>
+    <string name="lblDate">Date (yyyy-mm-dd):</string>
+    <string name="lblStation">Station:</string>
+    <string name="lblOdometer">Odometer (km):</string>
+    <string name="lblFuelGrade">Fuel Grade:</string>
+    <string name="lblFuelAmount">Fuel Amount (L):</string>
+    <string name="lblFuelUnitCost">Fuel Unit Cost (¢/L):</string>
+    <string name="lblFuelCost">Fuel Cost ($):</string>
+    <string name="txtFuelCost" />
 </resources>
