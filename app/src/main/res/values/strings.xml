@@ -13,4 +13,11 @@
     <string name="lblFuelUnitCost">Fuel Unit Cost (¢/L):</string>
     <string name="lblFuelCost">Fuel Cost ($):</string>
     <string name="txtFuelCost" />
+    <string name="title_activity_view_edit">ViewEditActivity</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnSave">Save</string>
+    <string name="titleAdd">Add New Fuel Entry</string>
+    <string name="titleView">View Fuel Entries</string>
+    <string name="lblEdit">Select Entry to Edit.</string>
 </resources>
