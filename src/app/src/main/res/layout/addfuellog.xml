@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/titleAdd"
+        android:id="@+id/titleAdd"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#787878"
+        android:padding="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+
+    <!--Label and fill in space for Date-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDate"
+        android:id="@+id/lblDate"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/titleAdd"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:textSize="15sp"
+        android:ems="11"
+        android:id="@+id/txtDate"
+        android:layout_alignBottom="@+id/lblDate"
+        android:layout_alignEnd="@+id/titleAdd" />
+
+    <!--Label and fill in space for Station-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblStation"
+        android:id="@+id/lblStation"
+        android:layout_below="@+id/lblDate"
+        android:textSize="15sp"
+        android:layout_alignStart="@+id/lblDate"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:ems="10"
+        android:id="@+id/txtStation"
+        android:layout_alignBottom="@+id/lblStation"
+        android:layout_alignRight="@id/txtDate"
+        android:layout_toEndOf="@+id/lblStation" />
+
+    <!--Label and fill in space for Odometer Reading-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblOdometer"
+        android:id="@+id/lblOdometer"
+        android:layout_below="@+id/lblStation"
+        android:textSize="15sp"
+        android:layout_alignStart="@+id/lblStation"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        android:ems="10"
+        android:id="@+id/txtOdometer"
+        android:layout_alignBottom="@+id/lblOdometer"
+        android:layout_alignRight="@id/txtStation"
+        android:layout_toEndOf="@+id/lblOdometer" />
+
+    <!--Label and fill in space for Fuel Grade-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblFuelGrade"
+        android:id="@+id/lblFuelGrade"
+        android:layout_below="@+id/lblOdometer"
+        android:textSize="15sp"
+        android:layout_alignStart="@+id/lblOdometer"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:ems="10"
+        android:id="@+id/txtFuelGrade"
+        android:layout_alignBottom="@+id/lblFuelGrade"
+        android:layout_alignRight="@id/txtOdometer"
+        android:layout_toEndOf="@+id/lblFuelGrade" />
+
+    <!--Label and fill in space for Fuel Amount-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblFuelAmount"
+        android:id="@+id/lblFuelAmount"
+        android:layout_below="@+id/lblFuelGrade"
+        android:textSize="15sp"
+        android:layout_alignStart="@+id/lblFuelGrade"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        android:ems="10"
+        android:id="@+id/txtFuelAmount"
+        android:layout_alignBottom="@+id/lblFuelAmount"
+        android:layout_alignRight="@id/txtFuelGrade"
+        android:layout_toEndOf="@+id/lblFuelAmount" />
+
+    <!--Label and fill in space for Fuel Unit Cost-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblFuelUnitCost"
+        android:id="@+id/lblFuelUnitCost"
+        android:layout_below="@+id/lblFuelAmount"
+        android:textSize="15sp"
+        android:layout_alignStart="@+id/lblFuelAmount"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        android:ems="10"
+        android:id="@+id/txtFuelUnitCost"
+        android:layout_alignBottom="@+id/lblFuelUnitCost"
+        android:layout_alignRight="@id/txtFuelAmount"
+        android:layout_toEndOf="@+id/lblFuelUnitCost" />
+
+    <!--Label and fill in space for Fuel Cost - calculated from Fuel Amount and Unit Cost-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblFuelCost"
+        android:id="@+id/lblFuelCost"
+        android:layout_below="@+id/lblFuelUnitCost"
+        android:textSize="15sp"
+        android:layout_alignStart="@+id/lblFuelUnitCost"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/txtFuelCost"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/lblFuelCost"
+        android:layout_alignRight="@id/txtFuelUnitCost"
+        android:layout_toEndOf="@+id/lblFuelCost"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/btnSave"
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/txtFuelCost" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:text="@string/btnCancel"
+        android:id="@+id/btnCancel"
+        android:layout_below="@+id/txtFuelCost"
+        android:layout_alignTop="@id/btnSave"
+        android:layout_toRightOf="@id/btnSave"/>
+
+</RelativeLayout>
