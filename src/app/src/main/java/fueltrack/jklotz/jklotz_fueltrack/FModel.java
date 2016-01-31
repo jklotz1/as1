@@ -5,6 +5,8 @@ import java.util.ArrayList;
 /**
  * Created by Jessica on 2016-01-29.
  */
+
+//taken from fillerCreep app https://github.com/jklotz1/FillerCreepForAndroid/blob/master/app/src/main/java/es/softwareprocess/fillercreep/FModel.java
 public class FModel<V extends FView> {
     //array from holding views
     private ArrayList<V> views;

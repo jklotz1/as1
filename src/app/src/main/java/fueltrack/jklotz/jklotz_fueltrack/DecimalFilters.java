@@ -9,6 +9,8 @@ import java.util.regex.Pattern;
 /**
  * Created by Jessica on 2016-01-30.
  */
+
+//taken from stack overflow http://stackoverflow.com/questions/5357455/limit-decimal-places-in-android-edittext on Jan-30-2016
 public class DecimalFilters implements InputFilter {
 
     Pattern mPattern;

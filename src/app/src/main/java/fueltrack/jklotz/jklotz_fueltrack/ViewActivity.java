@@ -26,15 +26,14 @@ public class ViewActivity extends Activity implements FView<FuelList> {
     private String FILENAME = "fuel.sav";
 
     //array to store existing fuel entries
-    private ArrayList<Fuel> fuelEntries;
-    private FuelList fuelLog;
+    //private ArrayList<Fuel> fuelEntries;
+    //private FuelList fuelLog;
 
     //List and text view on UI
     private ListView fuelList;
-    private TextView totalCost;
 
     //create instance of tracker controller
-    private TrackerController trackerController;
+    //private TrackerController trackerController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +41,11 @@ public class ViewActivity extends Activity implements FView<FuelList> {
         setContentView(R.layout.viewfuellog);
 
         fuelList = (ListView)findViewById(R.id.fuelList);
-        totalCost = (TextView)findViewById(R.id.totalCost);
 
         //get the current fuel log and store in the fuelList
-        fuelLog = new FuelList(loadFuelLog(FILENAME));
-        trackerController = FuelTrackerApplication.getTrackerController();
-        trackerController.setFuelLog(loadFuelLog(FILENAME));
+//        fuelLog = new FuelList(loadFuelLog(FILENAME));
+//        TrackerController trackerController = FuelTrackerApplication.getTrackerController();
+//        trackerController.setFuelLog(loadFuelLog(FILENAME));
 
         //entry has been selected to be edited
         //pass the entry number as a parameter
@@ -60,13 +58,6 @@ public class ViewActivity extends Activity implements FView<FuelList> {
                 Intent intent = new Intent(ViewActivity.this, AddActivity.class);
                 intent.putExtra("type", "edit");
                 intent.putExtra("entryNumber", entry.getEntryNumber());
-//                intent.putExtra("date", entry.getDate());
-//                intent.putExtra("station", entry.getStation());
-//                intent.putExtra("odometer", entry.getOdometer());
-//                intent.putExtra("fuelAmount", entry.getFuelAmount());
-//                intent.putExtra("fuelGrade", entry.getFuelGrade());
-//                intent.putExtra("fuelUnitCost", entry.getFuelUnitCost());
-//                intent.putExtra("fuelCost", entry.getFuelCost());
                 startActivity(intent);
 
             }
@@ -81,13 +72,15 @@ public class ViewActivity extends Activity implements FView<FuelList> {
     protected void onStart() {
         super.onStart();
         //get the list of entries
-        fuelEntries = loadFuelLog(FILENAME);
+        ArrayList<Fuel> fuelEntries = loadFuelLog(FILENAME);
 
         //set adapter so that listview displays entries
         ArrayAdapter<Fuel> adapter = new ArrayAdapter<Fuel>(this, R.layout.list_item, fuelEntries);
         fuelList.setAdapter(adapter);
 
-        //calcualate cost and updates the view
+        //calculate cost and updates the view
+        TrackerController trackerController = FuelTrackerApplication.getTrackerController();
+        trackerController.setFuelLog(loadFuelLog(FILENAME));
         trackerController.calculateTotalCost();
     }
 
@@ -133,6 +126,7 @@ public class ViewActivity extends Activity implements FView<FuelList> {
 
     //calculate the total cost from the costs from all entries
     public void getTotalCost(ArrayList<Fuel> entries){
+        TextView totalCost = (TextView)findViewById(R.id.totalCost);
         double cost = 0;
         for (int i = 0; i < entries.size() ; i++) {
             cost += entries.get(i).getFuelCost();
@@ -143,6 +137,8 @@ public class ViewActivity extends Activity implements FView<FuelList> {
     //show changes to the view
     @Override
     public void update(FuelList model) {
+        TrackerController trackerController = FuelTrackerApplication.getTrackerController();
+        trackerController.setFuelLog(loadFuelLog(FILENAME));
         getTotalCost(trackerController.getFuelLog());
     }
 }
